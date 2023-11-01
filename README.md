@@ -1,0 +1,1 @@
+An email subscribe card component build using Tailwind CSS.
