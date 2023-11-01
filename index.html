@@ -8,38 +8,48 @@
 	</head>
 	<body>
 		<!-- Background Container -->
-		<div class="bg-zinc-700 h-screen flex items-center justify-center p-12">
+		<div class="bg-zinc-700 h-screen flex items-center justify-center p-5 font-serif">
 			<!-- Card -->
-			<div class="bg-zinc-800 text-white p-4 pb-8 rounded-xl flex flex-col max-w-md">
+			<div
+				class="bg-zinc-800 text-white p-4 rounded-xl flex flex-col max-w-md md:flex-row md:max-w-2xl shadow-md shadow-zinc-900"
+			>
 				<!-- Image -->
 				<img
 					src="./images/image.jpg"
 					alt="Card Image"
-					class="rounded-xl rounded-b-none h-80"
+					class="rounded-xl rounded-b-none h-56 md:h-80 md:rounded-xl md:rounded-r-none hover:scale-105 transition duration-200"
 				/>
 
 				<!-- Content Container -->
-				<div class="text-center flex flex-col justify-center items-center">
-					<h2 class="font-serif text-white mt-5 text-xl">
+				<div
+					class="flex flex-col justify-center items-center md:ml-4 md:items-start text-center md:text-left"
+				>
+					<!-- Content -->
+					<h2 class="text-white mt-5 text-xl md:text-2xl">
 						Get diet and fitness tips in your inbox.
 					</h2>
 
-					<p class="font-serif text-sm mt-2">
+					<p class="text-sm mt-2">
 						Eat better and exercise better. Sign up for the Diet & Fitness newsletter.
 					</p>
 
 					<!-- Input Container -->
-					<div class="mt-4 flex flex-col w-full px-2">
+					<div class="mt-4 flex flex-col w-full">
 						<input
 							type="text"
 							name="email"
 							id="email"
 							class="bg-zinc-700 border border-zinc-500 p-2 rounded-sm outline-none"
-                            placeholder="Enter your email address"
+							placeholder="Enter your email address"
 						/>
 
-                        <!-- Button -->
-						<button type="button" class="mt-4 px-4 py-2 bg-lime-400 text-zinc-800 font-bold rounded-lg">Subscribe</button>
+						<!-- Button -->
+						<button
+							type="button"
+							class="mt-4 px-4 py-2 bg-lime-400 text-zinc-800 font-bold rounded-lg hover:bg-lime-500 transition duration-200 shadow-md"
+						>
+							Subscribe
+						</button>
 					</div>
 				</div>
 			</div>
