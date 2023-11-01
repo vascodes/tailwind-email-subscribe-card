@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Email Subscribe Card</title>
-    <link rel="stylesheet" href="css/style.css">    
-</head>
-<body>
-    <h1 class="text-5xl">Hello World</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind Email Subscribe Card</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Background Container -->
+		<div class="bg-zinc-700 h-screen flex items-center justify-center p-12">
+			<!-- Card -->
+			<div class="bg-zinc-800 text-white p-4 pb-8 rounded-xl flex flex-col">
+				<!-- Image -->
+				<img
+					src="./images/image.jpg"
+					alt="Card Image"
+					class="rounded-xl rounded-b-none h-80"
+				/>
+
+				<!-- Content Container -->
+				<div class="text-center flex flex-col justify-center items-center">
+					<h2 class="font-serif text-white mt-5 text-xl">
+						Get diet and fitness tips in your inbox.
+					</h2>
+
+					<p class="font-serif text-sm mt-2">
+						Eat better and exercise better. Sign up for the Diet & Fitness newsletter.
+					</p>
+
+					<!-- Input Container -->
+					<div class="mt-4 flex flex-col w-full px-2">
+						<input
+							type="text"
+							name="email"
+							id="email"
+							class="bg-zinc-700 border border-zinc-500 p-2 rounded-sm outline-none"
+                            placeholder="Enter your email address"
+						/>
+						<button type="button" class="mt-2 px-4 py-2 bg-lime-400 text-zinc-800 font-bold rounded-lg">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
